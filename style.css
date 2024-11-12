@@ -1,0 +1,96 @@
+*{
+    margin:0%;
+    padding:0%;
+ box-sizing: border-box;
+}
+
+html,body{
+   height:100%;
+width:100%;
+font-family: monospace;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(320deg,rgb(116, 116, 201),rgb(128, 240, 128),rgb(210, 106, 106));
+}
+.card{
+    border-radius: 20px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.3);
+ 
+
+}
+.top{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    /* padding: 0 %; */
+    margin-top: 10%;
+    position: relative;
+}
+.top input{
+    padding: 0 20px;
+    text-align: right;
+    font-size: 47px;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.7);
+    border:1px solid #dada;
+    height: 60%;
+    width: 80%;
+    border-radius:10px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.1)
+}
+
+.button-row{
+   
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0;
+}
+.btn{
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.67);
+  flex-basis: 20%;
+    font-size: 40px;
+    border-radius: 20px;
+    border:1px solid #dadada;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.1)
+
+}
+#double{
+    flex-basis: 47%;
+}
+#second-double{
+    flex-basis: 47%;
+}
+
+.btn:last-child{
+    background-color: rgb(91, 91, 198);
+}
+.btn:hover{
+background: inherit;
+cursor: pointer;
+}
+.btn:active{
+    background-color: rgb(235, 235, 136) ;
+}
+
+@media (max-with:750px) {
+    .card{
+        background-color: aqua;
+        height: 70%;
+        width: 70%;
+    }
+    
+}
